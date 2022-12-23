@@ -12,17 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            position: fixed;
+            position: auto;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: auto;
+            background-attachment: scroll;
+            background: local;
             width: 100%;
-            background-image: url(https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/08/25/3897859058.jpg);
-            height: calc(100%);
-            margin-top: 250px;
+            background-image: url(https://akcdn.detik.net.id/community/media/visual/2022/07/22/tugu-kujang-sukabumi_43.jpeg?w=700&q=90);
+            margin-top: 150px;
         }
 
         .footer {
-            position: fixed;
+            position: absolute;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -80,7 +81,7 @@
             </h5>
 
             <div class="d-flex justify-content-center align-item-center ">
-                <form action="<?= base_url('home/view/') . '/' ?>" method="post" enctype="multipart/form-data">
+                <form action="point.html">
                     <div class="form-group">
                         <input type="submit" class="btn btn-primary mt-2" value="Peta Fasilitas Kesehatan" />
                     </div>
@@ -92,7 +93,7 @@
     <footer class="footer p-3">
         <div class="container-fluid">
             <center>
-                <div class="copyright float text-light">
+                <div class="copyright float text-dark">
                     &copy; 2022 FasKesBumi
                 </div>
             </center>
